@@ -1,0 +1,132 @@
+@font-face {
+    font-family: Helvetica;
+    src: url("helvetica.otf") format("opentype");
+}
+body{
+    background-color: #effafb;
+    font-family: Helvetica;
+    font-size: 0.7rem;
+}
+.card{
+    display: grid;
+    grid-template-columns: 1fr 3fr 5fr;
+    justify-items: stretch;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    cursor: pointer;
+    box-shadow: 1px 3px #deedf1;
+}
+
+.card-company-image{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-position:hover{
+    color: #5da3a2;
+}
+
+.card-main-content{
+    padding: 10px;
+}
+
+.card-company-name{
+    color: #5da3a2;
+}
+
+.card-details{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    color: #8f9493;
+}
+
+.card-keywords{
+    margin-right: 20px;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.card-keywords li{
+    background-color: #ddf1f1;
+    border: none;
+    color: #5da3a2;
+    padding: 8px;
+    border-radius: 2px;
+}
+
+.card-keywords li:hover{
+    color: white;
+    background-color: #5da3a2;
+}
+
+.card-keywords .selected{
+    color: white;
+    background-color: #5da3a2;
+}
+
+.filter{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    justify-items: stretch;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #ffffff;
+    cursor: pointer;
+    box-shadow: 1px 3px #deedf1;
+}
+
+.filter-keywords{
+    display: flex;
+    color: #5da3a2;
+    border-radius: 1px;
+}
+
+.filter-keywords div{
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.filter-keywords .item{
+    background-color: #eef8f3;
+    color: #5da3a2;
+    font-weight: bold;
+}
+
+.filter-keywords .close-button{
+    background-color: #5da3a2;
+    color: white;
+    display: inline-block;
+    border-radius: 1px;
+}
+
+.filter-keywords .close-button:hover{
+    background-color: black;
+}
+
+
+.clear-button{
+    border: none;
+    color: #5da3a2;
+    text-decoration: underline;
+    text-align: right;
+}
+
+.filtered-words-div{
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    gap: 20px;
+}

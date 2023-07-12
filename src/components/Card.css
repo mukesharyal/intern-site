@@ -1,0 +1,61 @@
+.card{
+    display: grid;
+    grid-template-columns: 1fr 3fr 5fr;
+    justify-items: stretch;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    cursor: pointer;
+    box-shadow: 1px 3px #deedf1;
+}
+
+.card-company-image{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-position:hover{
+    color: #5da3a2;
+}
+
+.card-main-content{
+    padding: 10px;
+}
+
+.card-company-name{
+    color: #5da3a2;
+}
+
+.card-details{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    color: #8f9493;
+}
+
+.card-keywords{
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.card-keywords li{
+    background-color: #ddf1f1;
+    border: none;
+    color: #5da3a2;
+    padding: 8px;
+    border-radius: 2px;;
+}
+
+.card-keywords li:hover{
+    color: white;
+    background-color: #5da3a2;
+}
