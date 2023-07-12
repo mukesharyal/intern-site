@@ -1,7 +1,5 @@
-import React from "react";
 export default function Card(props)
 {
-    const [clicked, setClicked] = React.useState(false);
     const today = new Date();
 
     const todaySec = today.getTime();
@@ -16,19 +14,6 @@ export default function Card(props)
         numDays = Math.ceil(numDays % 30);
     }
 
-    function toggle(event)
-    {
-        if(!clicked)
-        {
-            addFilter(event);
-        }
-        else
-        {
-            removeFilter(event);
-        }
-        setClicked(!clicked);
-    }
-
     // This function adds a new filter whenever the keyword is clicked
     function addFilter(event)
     {
@@ -38,14 +23,6 @@ export default function Card(props)
         {
             props.setFilters((prevFilters) => [...prevFilters, tag]);
         }
-    }
-
-    // This function removes an individual filter when the close button on the filter is clicked
-    function removeFilter(event)
-    {
-        const tag = event.target.parentNode.childNodes[0].innerHTML;
-
-        props.setFilters((prevFilters) => [...prevFilters.filter(item => item !== tag)]);
     }
 
     return(
@@ -86,7 +63,7 @@ export default function Card(props)
                     {
                         props.content.keywords.map(
                             (item) => 
-                            <li className={props.filters.includes(item) ? "selected" : "normal"} key={item} onClick={toggle}>
+                            <li key={item} onClick={addFilter}>
                                 {item}
                             </li>
                         )
