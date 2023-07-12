@@ -69,6 +69,11 @@ body{
     background-color: #5da3a2;
 }
 
+.card-keywords .selected{
+    color: white;
+    background-color: #5da3a2;
+}
+
 .filter{
     display: grid;
     grid-template-columns: 5fr 1fr;

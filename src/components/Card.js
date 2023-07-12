@@ -63,7 +63,7 @@ export default function Card(props)
                     {
                         props.content.keywords.map(
                             (item) => 
-                            <li key={item} onClick={addFilter}>
+                            <li className={props.filters.includes(item) ? "selected" : "normal"} key={item} onClick={addFilter}>
                                 {item}
                             </li>
                         )
