@@ -1,31 +1,53 @@
-# Intern Site made with ReactJS
+# 🌐 Intern Site made with ReactJS
 
-This is a static web-app created with ReactJS that pulls JSON through an external API and posts them in a manageable format. The data is job listings for different positions posted at different points in time. There are keywords available in each job and they are clickable so that the keywords are added to the filters. The app is capable of filtering the job listings with the particular filters.
+This is a static web app built with **ReactJS** that pulls data via an external **JSON API** and displays job listings in a clean, manageable format.
 
-It was created by me when applying for an internship in a company, which required to create a working sample of a little web-app. This was when I learnt a bit of React (how much was required for making the app work) for the first time.
+Each listing includes keywords that are **clickable**, allowing users to add them to a filter. The app can filter job listings based on the selected keywords, making job discovery easier and more focused.
 
-## Installation and Setup
+This project was developed by me as part of an **internship application**. It required creating a simple but functional web app. It was also my first exposure to **React**, where I learned just enough to make the app work effectively. 🚀
+
+---
+
+## ⚙️ Installation and Setup
 
 Follow these steps to get the application running on your local machine:
 
-1. Clone the repository
-   ```
+1. 📥 **Clone the repository**
+   ```bash
    git clone [repository-url]
    ```
 
-2. Navigate to the project directory
-   ```
+2. 📂 **Navigate to the project directory**
+   ```bash
    cd [repository-name]
    ```
 
-3. Install dependencies
-   ```
+3. 📦 **Install dependencies**
+   ```bash
    npm install
    ```
 
-4. Start the development server
-   ```
+4. 🚀 **Start the development server**
+   ```bash
    npm start
    ```
 
-5. Open your browser and visit `http://localhost:3000` to view the application
+5. 🌍 **Open your browser and visit**
+   ```
+   http://localhost:3000
+   ```
+
+You should now see the application running locally.
+
+---
+
+🛠️ **Built With:**
+- ReactJS
+- External JSON API
+
+📚 **What I learned:**
+- Basics of React
+- API integration
+- State and filter logic
+
+---
