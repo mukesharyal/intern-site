@@ -14,12 +14,12 @@ Follow these steps to get the application running on your local machine:
 
 1. 📥 **Clone the repository**
    ```bash
-   git clone [repository-url]
+   git clone https://github.com/mukesharyal/intern-site.git
    ```
 
 2. 📂 **Navigate to the project directory**
    ```bash
-   cd [repository-name]
+   cd intern-site
    ```
 
 3. 📦 **Install dependencies**
